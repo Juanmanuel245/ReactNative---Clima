@@ -1,23 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import AppBar from '@material-ui/core/AppBar';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-           <AppBar position='sticky'>
-              <Toolbar>
-                <Typography variant='title' color='inherit'>
-                  ecoCocina
-                </Typography>
-              </Toolbar>
-            </AppBar>
+        <View>
+          <Text>Hello World!</Text>
         <Text>Hola!!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+        <Button
+            onPress={onPressLearnMore}
+            title="Learn More"
+            color="#841584"
+            accessibilityLabel="Learn more about this purple button"
+            />
+        </View>
+
+      
+        
+     
 
 
     );
